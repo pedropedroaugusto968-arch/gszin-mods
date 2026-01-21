@@ -1,0 +1,27 @@
+<?php
+$arquivo = 'keys.json';
+if (isset($_GET['gerar'])) {
+    $dias = $_GET['gerar'];
+    $db = file_exists($arquivo) ? json_decode(file_get_contents($arquivo), true) : [];
+    $novaKey = "GSZIN-" . strtoupper(substr(md5(uniqid()), 0, 5));
+    $tempo = ($dias == "999") ? 2147483647 : time() + ($dias * 86400);
+    $db[$novaKey] = $tempo;
+    file_put_contents($arquivo, json_encode($db, JSON_PRETTY_PRINT));
+    header("Location: index.php");
+    exit;
+}
+?>
+<body style="background:#000; color:#fff; font-family:sans-serif; text-align:center;">
+    <h1 style="color:red;">PAINEL GSZIN MODS</h1>
+    <div style="margin:20px;">
+        <a href="?gerar=1" style="padding:10px; background:gray; color:white; text-decoration:none; border-radius:5px;">+1 DIA</a>
+        <a href="?gerar=7" style="padding:10px; background:blue; color:white; text-decoration:none; border-radius:5px;">+7 DIAS</a>
+        <a href="?gerar=30" style="padding:10px; background:green; color:white; text-decoration:none; border-radius:5px;">+30 DIAS</a>
+        <a href="?gerar=999" style="padding:10px; background:gold; color:black; text-decoration:none; border-radius:5px;">PERMANENTE</a>
+    </div>
+    <hr>
+    <h3>CÓDIGO PARA COPIAR PARA O GITHUB:</h3>
+    <textarea style="width:90%; height:200px; background:#111; color:lime; border:1px solid #444;">
+<?php echo file_get_contents($arquivo); ?>
+    </textarea>
+</body>

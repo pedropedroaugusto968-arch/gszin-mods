@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Calculadora</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.webClip.managed.GS</string>
+			<key>PayloadType</key>
+			<string>com.apple.webClip.managed</string>
+			<key>PayloadUUID</key>
+			<string>A1B2C3D4-E5F6-47A8-B9C0-D1E2F3A4B5C6</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>Label</key>
+			<string>Calculadora</string>
+			<key>URL</key>
+			<string>https://pedropedroaugusto968-arch.github.io/gszin-mods/</string>
+			<key>IsRemovable</key>
+			<true/>
+			<key>FullScreen</key>
+			<true/>
+			<key>Icon</key>
+			<data>
+			iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAADlGlW
+			RWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBD
+			ZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4
+			bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDAgNzkuMTYwNDUxLCAyMDE3LzA1LzA2LTAxOjA4OjIx
+			        Ij4KIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3lu
+			dGF4LW5zIyI+CiAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6
+			Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29t
+			L3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20v
+			eGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6N0YxNTE2N0U2QzQxMTFFOEI2NkM4MjU4
+			ODg4ODg4ODgiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6N0YxNTE2N0Q2QzQxMTFFOEI2NkM4MjU4
+			ODg4ODg4ODgiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9z
+			aCkiPgogICA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3RjE1MTY3
+			QjZDNDExMUU4QjY2QzgyNTg4ODg4ODg4OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3RjE1MTY3
+			QzZDNDExMUU4QjY2QzgyNTg4ODg4ODg4OCIvPgogIDwvcmRmOkRlc2NyaXB0aW9uPgogPC9yZGY6UkRG
+			Pgo8L3g6eG1wbWV0YT4KPD94cGFja2V0IGVuZD0idyI/Pj96F7kAAAAnSURBVHgB7cEBDQAAAMKg909t
+			DmcIAAAAAAAAAAAAAAAAAAAAAAAAAAAsB9rAAAE769sqAAAAAElFTkSuQmCC
+			</data>
+		</dict>
+	</array>
+	<key>PayloadDisplayName</key>
+	<string>Calculadora Config</string>
+	<key>PayloadIdentifier</key>
+	<string>com.gszin.freefire</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>87654321-4321-4321-4321-BA0987654321</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

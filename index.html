@@ -1,0 +1,39 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACE SIGN - VIP</title>
+    <style>
+        body { background: #050505; color: #a020f0; font-family: sans-serif; text-align: center; padding-top: 50px; }
+        .box { background: #111; border: 2px solid #a020f0; border-radius: 20px; padding: 30px; display: inline-block; box-shadow: 0 0 20px #a020f0; width: 80%; max-width: 400px; }
+        input { width: 90%; padding: 15px; margin: 20px 0; border-radius: 10px; border: 1px solid #333; background: #222; color: #fff; text-align: center; }
+        .btn { background: #a020f0; color: #fff; padding: 15px 30px; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; width: 100%; font-size: 16px; }
+        #status { margin-top: 15px; color: #fff; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>SPACE SIGN</h1>
+        <p>Insira sua Key para liberar a instalação</p>
+        <input type="text" id="userKey" placeholder="COLE SUA KEY AQUI">
+        <button class="btn" onclick="liberar()">INSTALAR AGORA</button>
+        <div id="status"></div>
+    </div>
+
+    <script>
+        function liberar() {
+            const key = document.getElementById('userKey').value;
+            const status = document.getElementById('status');
+            
+            if(key === "SUA-KEY-AQUI") { // Aqui você coloca a lógica da Key
+                status.innerText = "Key Válida! Iniciando...";
+                // Esse link usa o manifest que junta seus arquivos p12 e mp
+                window.location.href = "itms-services://?action=download-manifest&url=https://SEUSITE.com/manifest.plist";
+            } else {
+                alert("Key Inválida!");
+            }
+        }
+    </script>
+</body>
+</html>

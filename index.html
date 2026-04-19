@@ -1,39 +1,65 @@
-<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPACE SIGN - VIP</title>
     <style>
-        body { background: #050505; color: #a020f0; font-family: sans-serif; text-align: center; padding-top: 50px; }
-        .box { background: #111; border: 2px solid #a020f0; border-radius: 20px; padding: 30px; display: inline-block; box-shadow: 0 0 20px #a020f0; width: 80%; max-width: 400px; }
-        input { width: 90%; padding: 15px; margin: 20px 0; border-radius: 10px; border: 1px solid #333; background: #222; color: #fff; text-align: center; }
-        .btn { background: #a020f0; color: #fff; padding: 15px 30px; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; width: 100%; font-size: 16px; }
-        #status { margin-top: 15px; color: #fff; font-size: 14px; }
+        body { background: #080808; color: #a020f0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; padding-top: 60px; }
+        .box { background: #121212; border: 2px solid #a020f0; border-radius: 20px; padding: 30px; display: inline-block; box-shadow: 0 0 30px #a020f0; width: 85%; max-width: 400px; }
+        h1 { margin-bottom: 5px; font-size: 28px; text-transform: uppercase; letter-spacing: 2px; }
+        p { color: #666; margin-top: 0; font-size: 14px; }
+        input { width: 90%; padding: 15px; margin: 20px 0; border-radius: 10px; border: 1px solid #333; background: #1a1a1a; color: #fff; text-align: center; font-size: 16px; outline: none; }
+        input:focus { border-color: #a020f0; }
+        
+        /* Botão de Instalar (Escondido) */
+        #btnInstalar { 
+            display: none; 
+            background: #a020f0; color: #fff; border: none; padding: 18px; 
+            border-radius: 10px; font-weight: bold; cursor: pointer; width: 100%; font-size: 18px;
+            text-decoration: none; box-shadow: 0 0 15px #a020f0; margin-top: 10px;
+        }
+        
+        .btn-verificar { background: #333; color: #fff; border: none; padding: 12px; border-radius: 8px; width: 100%; cursor: pointer; font-weight: bold; transition: 0.3s; }
+        .btn-verificar:hover { background: #444; }
+        #status { margin-top: 15px; font-size: 14px; font-weight: bold; }
     </style>
 </head>
 <body>
+
     <div class="box">
         <h1>SPACE SIGN</h1>
-        <p>Insira sua Key para liberar a instalação</p>
-        <input type="text" id="userKey" placeholder="COLE SUA KEY AQUI">
-        <button class="btn" onclick="liberar()">INSTALAR AGORA</button>
-        <div id="status"></div>
+        <p>Certificado: Zhizhangyi Inc</p>
+        
+        <input type="text" id="inputKey" placeholder="INSIRA SUA KEY VIP">
+        
+        <button class="btn-verificar" onclick="validarKey()">VERIFICAR ACESSO</button>
+        
+        <a id="btnInstalar" href="itms-services://?action=download-manifest&url=https://pedropedroaugusto968-arch.github.io/gszin-mods/manifest.plist">
+            INSTALAR APP VIP 🚀
+        </a>
+
+        <div id="status">Aguardando Key...</div>
     </div>
 
     <script>
-        function liberar() {
-            const key = document.getElementById('userKey').value;
+        function validarKey() {
+            const key = document.getElementById('inputKey').value;
+            const btn = document.getElementById('btnInstalar');
             const status = document.getElementById('status');
-            
-            if(key === "SUA-KEY-AQUI") { // Aqui você coloca a lógica da Key
-                status.innerText = "Key Válida! Iniciando...";
-                // Esse link usa o manifest que junta seus arquivos p12 e mp
-                window.location.href = "itms-services://?action=download-manifest&url=https://SEUSITE.com/manifest.plist";
+
+            // TESTE COM ESTA KEY: SPACE-GOMES-777
+            if (key === "SPACE-GOMES-777") {
+                status.innerText = "✅ ACESSO LIBERADO!";
+                status.style.color = "#00ff00";
+                btn.style.display = "block"; 
             } else {
-                alert("Key Inválida!");
+                status.innerText = "❌ KEY INVÁLIDA!";
+                status.style.color = "#ff0000";
+                btn.style.display = "none";
             }
         }
     </script>
+
 </body>
 </html>
